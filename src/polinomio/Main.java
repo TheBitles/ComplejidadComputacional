@@ -1,4 +1,4 @@
-package poliniomios;
+package polinomio;
 
 public class Main {
 
