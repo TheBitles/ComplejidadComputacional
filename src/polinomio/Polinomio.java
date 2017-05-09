@@ -131,7 +131,7 @@ public class Polinomio {
 	 * @return Se retorna la evaluación del polinomio
 	 */
 	public double evaluarMejorada(double x) {
-		// ??
+		return x; // implementar !!
 	}
 
 	/**
