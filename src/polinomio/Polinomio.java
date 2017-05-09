@@ -5,12 +5,12 @@ import java.io.FileReader;
 import java.util.Scanner;
 
 /**
- * La clase Polinomio permite evaluar un polinomio con diferentes métodos. <br>
- * Los métodos usarán diferentes algoritmos con complejidades computacionales
+ * La clase Polinomio permite evaluar un polinomio con diferentes mï¿½todos. <br>
+ * Los mï¿½todos usarï¿½n diferentes algoritmos con complejidades computacionales
  * diferentes. <br>
- * La posición cero del arreglo de coeficientes contiene el coeficiente de grado
+ * La posiciï¿½n cero del arreglo de coeficientes contiene el coeficiente de grado
  * n. <br>
- * La posición n del arreglo de coeficientes contiene al término independiente.
+ * La posiciï¿½n n del arreglo de coeficientes contiene al tï¿½rmino independiente.
  * 
  * @author TheBitles
  */
@@ -25,7 +25,7 @@ public class Polinomio {
 
 	/**
 	 * Constructor de la clase Polinomio, que lo levanta de un archivo. <br>
-	 * - Primera línea: grado del polinomio. Segunda línea: (grado + 1)
+	 * - Primera lï¿½nea: grado del polinomio. Segunda lï¿½nea: (grado + 1)
 	 * coeficientes del polinomio.
 	 * 
 	 * @param path
@@ -58,12 +58,12 @@ public class Polinomio {
 	}
 
 	/**
-	 * Evalúa el polinomio utilizando cálculo de potencia por multiplicaciones
+	 * Evalï¿½a el polinomio utilizando cï¿½lculo de potencia por multiplicaciones
 	 * sucesivas.
 	 * 
 	 * @param x
-	 *            es el número a evaluar con el polinomio
-	 * @return Se retorna la evaluación del polinomio
+	 *            es el nï¿½mero a evaluar con el polinomio
+	 * @return Se retorna la evaluaciï¿½n del polinomio
 	 */
 	public double evaluarMSucesivas(double x) {
 		double y = 0;
@@ -74,11 +74,11 @@ public class Polinomio {
 	}
 
 	/**
-	 * Evalúa el polinomio utilizando cálculo de potencia por recursividad.
+	 * Evalï¿½a el polinomio utilizando cï¿½lculo de potencia por recursividad.
 	 * 
 	 * @param x
-	 *            es el número a evaluar con el polinomio
-	 * @return Se retorna la evaluación del polinomio
+	 *            es el nï¿½mero a evaluar con el polinomio
+	 * @return Se retorna la evaluaciï¿½n del polinomio
 	 */
 	public double evaluarRecursiva(double x) {
 		double y = 0;
@@ -89,12 +89,12 @@ public class Polinomio {
 	}
 
 	/**
-	 * Evalúa el polinomio utilizando cálculo de potencia por recursividad
+	 * Evalï¿½a el polinomio utilizando cï¿½lculo de potencia por recursividad
 	 * distinguiendo si el exponente es par o impar.
 	 * 
 	 * @param x
-	 *            es el número a evaluar con el polinomio
-	 * @return Se retorna la evaluación del polinomio
+	 *            es el nï¿½mero a evaluar con el polinomio
+	 * @return Se retorna la evaluaciï¿½n del polinomio
 	 */
 	public double evaluarRecursivaPar(double x) {
 		double y = 0;
@@ -105,11 +105,11 @@ public class Polinomio {
 	}
 
 	/**
-	 * Evalúa el polinomio almacenando las potencias de x ya calculadas.
+	 * Evalï¿½a el polinomio almacenando las potencias de x ya calculadas.
 	 * 
 	 * @param x
-	 *            es el número a evaluar con el polinomio
-	 * @return Se retorna la evaluación del polinomio
+	 *            es el nï¿½mero a evaluar con el polinomio
+	 * @return Se retorna la evaluaciï¿½n del polinomio
 	 */
 	public double evaluarProgDinamica(double x) {
 		double y = coeficientes[grado];
@@ -122,25 +122,25 @@ public class Polinomio {
 	}
 
 	/**
-	 * Evalúa el polinomio almacenando las potencias de x ya calculadas. <br>
-	 * Tiene la misma complejidad computacional que el método
+	 * Evalï¿½a el polinomio almacenando las potencias de x ya calculadas. <br>
+	 * Tiene la misma complejidad computacional que el mï¿½todo
 	 * evaluarProgDinamica pero ejecuta en menos tiempo.
 	 * 
 	 * @param x
-	 *            es el número a evaluar con el polinomio
-	 * @return Se retorna la evaluación del polinomio
+	 *            es el nï¿½mero a evaluar con el polinomio
+	 * @return Se retorna la evaluaciï¿½n del polinomio
 	 */
 	public double evaluarMejorada(double x) {
 		return x; // implementar !!
 	}
 
 	/**
-	 * Evalúa el polinomio utilizando cálculo de potencia con el método
+	 * Evalï¿½a el polinomio utilizando cï¿½lculo de potencia con el mï¿½todo
 	 * Math.pow(x, n).
 	 * 
 	 * @param x
-	 *            es el número a evaluar con el polinomio
-	 * @return Se retorna la evaluación del polinomio
+	 *            es el nï¿½mero a evaluar con el polinomio
+	 * @return Se retorna la evaluaciï¿½n del polinomio
 	 */
 	public double evaluarPow(double x) {
 		double y = 0;
@@ -151,12 +151,12 @@ public class Polinomio {
 	}
 
 	/**
-	 * Evalúa el polinomio utilizando el algoritmo de Horner, uno de los métodos
-	 * del cálculo numérico.
+	 * Evalï¿½a el polinomio utilizando el algoritmo de Horner, uno de los mï¿½todos
+	 * del cï¿½lculo numï¿½rico.
 	 * 
 	 * @param x
-	 *            es el número a evaluar con el polinomio
-	 * @return Se retorna la evaluación del polinomio
+	 *            es el nï¿½mero a evaluar con el polinomio
+	 * @return Se retorna la evaluaciï¿½n del polinomio
 	 */
 	public double evaluarHorner(double x) {
 		double y = 0;
@@ -195,9 +195,11 @@ public class Polinomio {
 	private double potenciaRecursiva(double x, int n) {
 		if (n == 1) {
 			return x;
-		} else {
-			return x * potenciaRecursiva(x, n - 1);
-		}
+		} else if(n == 0) {
+				return 1;
+			} else {
+				return x * potenciaRecursiva(x, n - 1);
+			}
 	}
 
 	/**
@@ -213,10 +215,12 @@ public class Polinomio {
 	private double potenciaRecursivaPar(double x, int n) {
 		if (n == 1) {
 			return x;
+		} else if(n == 0) {
+			return 1;
 		} else if (n % 2 == 0) {
 			return potenciaRecursivaPar(x * x, n / 2);
 		} else {
-			return potenciaRecursivaPar(x, n - 1);
+			return x * potenciaRecursivaPar(x, n - 1);
 		}
 	}
 }
