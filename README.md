@@ -1,5 +1,7 @@
-Complejidad Computacional
+# Complejidad Computacional
 TP3 de Clase de Programación Avanzada.
+
+# Evaluación de Polinomios
 
 ### Integrantes del equipo
 
@@ -16,5 +18,5 @@ TP3 de Clase de Programación Avanzada.
 * JUnit 4
 
 ## Descripción
-El contenido principal de este repositorio es la clase Polinomio, que permite evaluar polinomios utilizando diferentes metodos.
+El contenido principal de este repositorio es la clase Polinomio, que permite evaluar polinomios utilizando diferentes métodos.
 Cada método tendrá una complejidad computacional diferente y será utilizada a modo comparativo con las demás.
