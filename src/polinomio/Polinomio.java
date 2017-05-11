@@ -112,13 +112,13 @@ public class Polinomio {
 	 * @return Se retorna la evaluaci�n del polinomio
 	 */
 	public double evaluarProgDinamica(double x) {
-		double y = coeficientes[grado];
-		double p = x;
-		for (int i = grado - 1; i >= 0; i--) {
-			y += coeficientes[i] * p;
-			p *= x;
+		double[] copy = new double[coeficientes.length]; //= coeficientes.clone();
+		copy[0] = 1;
+		for (int i = 1; i < copy.length; i++){
+			copy[0] += copy[i] = x * copy[i-1];
+			//copy[0] += copy[i];
 		}
-		return y;
+		return copy[0];
 	}
 
 	/**
@@ -131,7 +131,14 @@ public class Polinomio {
 	 * @return Se retorna la evaluaci�n del polinomio
 	 */
 	public double evaluarMejorada(double x) {
-		return x; // implementar !!
+		double y = coeficientes[grado];
+		double p = x;
+		for (int i = grado - 1; i >= 0; i--) {
+			y += coeficientes[i] * p;
+			p *= x;
+		}
+		return y;
+		
 	}
 
 	/**
