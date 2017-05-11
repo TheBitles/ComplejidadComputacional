@@ -112,13 +112,7 @@ public class Polinomio {
 	 * @return Se retorna la evaluaci�n del polinomio
 	 */
 	public double evaluarProgDinamica(double x) {
-		double y = coeficientes[grado];
-		double p = x;
-		for (int i = grado - 1; i >= 0; i--) {
-			y += coeficientes[i] * p;
-			p *= x;
-		}
-		return y;
+		return x; // implementar !!
 	}
 
 	/**
@@ -131,7 +125,14 @@ public class Polinomio {
 	 * @return Se retorna la evaluaci�n del polinomio
 	 */
 	public double evaluarMejorada(double x) {
-		return x; // implementar !!
+		double y = coeficientes[grado];
+		double p = x;
+		for (int i = grado - 1; i >= 0; i--) {
+			y += coeficientes[i] * p;
+			p *= x;
+		}
+		return y;
+		
 	}
 
 	/**
