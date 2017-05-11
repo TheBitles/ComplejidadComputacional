@@ -10,7 +10,7 @@ import java.util.GregorianCalendar;
 public class Main {
 
 	public static void main(String[] args) {
-		generarPolinomio(1000);
+		generarPolinomio(75000);
 		Polinomio polinomio = new Polinomio("polinomio.in");
 		rendimiento(polinomio);
 	}
@@ -25,12 +25,13 @@ public class Main {
 		//double y = polinomio.evaluarMejorada(2);
 		//double y = polinomio.evaluarRecursiva(2);
 		//double y = polinomio.evaluarRecursivaPar(2);
-		double y = polinomio.evaluarProgDinamica(2);
+		//double y = polinomio.evaluarProgDinamica(2);
+		double y = polinomio.evaluarMejorada(2);
 		Calendar tiempoFinal = new GregorianCalendar();
 		
 		System.out.println("\nResultado: " + y);
 		long variacionTiempo = tiempoFinal.getTimeInMillis() - tiempoInicial.getTimeInMillis();
-		System.out.println("Rendimiento del algoritmo: " + variacionTiempo + "from:\nfinal:   " + tiempoFinal.getTimeInMillis() + "\ninicial: " + tiempoInicial.getTimeInMillis());
+		System.out.println("Rendimiento del algoritmo: " + variacionTiempo + "\nfrom:\nfinal:   " + tiempoFinal.getTimeInMillis() + "\ninicial: " + tiempoInicial.getTimeInMillis());
 		
 	}
 	
